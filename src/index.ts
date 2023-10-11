@@ -5,12 +5,14 @@ import { dbConfig } from "../config/db.config";
 import { errorHandler } from "../middlewares/errorHandler";
 import { authRouter } from "./auth/auth.routes";
 import { calculateRoute } from "./calculator/calculator.routes";
+import morgan from "morgan";
 
 dotenv.config();
 
 const app = express();
 
 app.use(express.json());
+app.use(morgan("dev"));
 
 app.use(cors());
 
@@ -19,7 +21,7 @@ app.use("/calculate", calculateRoute);
 
 app.use(errorHandler);
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.NODE_ENV === "test" ? 5000 : process.env.PORT || 4000;
 
 const server = app.listen(PORT, async () => {
   console.log(`server running on ${PORT} `);
@@ -29,7 +31,8 @@ const server = app.listen(PORT, async () => {
 });
 
 //@: Handle unhandled promise rejections
-process.on("unhandledRejection", (err: any, promise) => {
-  console.log(`Error: ${err?.message}`);
+process.on("unhandledRejection", (err, promise) => {
   server.close(() => process.exit(1));
 });
+
+export default app;
