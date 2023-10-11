@@ -1,4 +1,3 @@
-// test/api.test.js
 import { describe, expect, test, beforeAll, afterAll, it } from "@jest/globals";
 import { MongoMemoryServer } from "mongodb-memory-server";
 import mongoose from "mongoose";
