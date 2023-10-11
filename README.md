@@ -63,6 +63,6 @@ This project consists of a Calculator API implemented with Express and Node.js, 
 ## Further guide
 
 <video width="320" height="240" controls>
-  <source src="./video.mp4" type="video/mp4">
+  <source src="https://drive.google.com/file/d/1itO5jknDKLYypCk5RKmzFDIUWK38L2eQ/view?usp=sharing" type="video/mp4">
   Your browser does not support the video tag.
 </video>
