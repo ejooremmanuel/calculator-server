@@ -59,3 +59,8 @@ This project consists of a Calculator API implemented with Express and Node.js, 
 - RUN `npm run start` to start the react app
 
 - RUN `npm run test` for unit tests
+
+<video width="320" height="240" controls>
+  <source src="video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
