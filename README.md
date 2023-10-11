@@ -15,7 +15,7 @@ This project consists of a Calculator API implemented with Express and Node.js, 
 
 - [Express.js](https://expressjs.com/): A Node.js web application framework for building the API.
 - [Node.js](https://nodejs.org/): A JavaScript runtime environment for executing server-side code.
-- [Joi](https://joi.dev/): A validation library for input data.
+- [Mathjs](https://https://mathjs.org/): A library for mathematical calculations
 - [Morgan](https://www.npmjs.com/package/morgan): A HTTP request logger middleware.
 - [CORS](https://www.npmjs.com/package/cors): A middleware for enabling Cross-Origin Resource Sharing.
 
